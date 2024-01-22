@@ -310,3 +310,55 @@ body, html {
     color: #999999;
     font-size: 14px;
 }
+
+h5 a{
+    text-decoration: none;
+    color: #000000;
+}
+
+h5 a:hover{
+    text-decoration: none;
+    color: #ff2b17;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-left: 1%;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 175px;
+    background-color: #888;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 100%;
+    margin-top: -10px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
