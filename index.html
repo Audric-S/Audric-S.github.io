@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="style.css">
+
     <script src="https://kit.fontawesome.com/7834701f1d.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 
     <title>Votre Portfolio</title>
 </head>
@@ -65,7 +66,7 @@ Ces études et cette passion m'ont permis de concrétiser l'un de mes rêves les
     
 
     <div class="layout">
-        <div class="sidebar-container">
+        <div class="sidebar-container" id="sidebar-container">
             <div class="sidebar" id="sidebar">
                 <div class="sidebar-item"><a href="#education">Formations</a></div>
                 <div class="sidebar-item"><a href="#professionnal-experience">Experiences</a></div>
@@ -76,21 +77,17 @@ Ces études et cette passion m'ont permis de concrétiser l'un de mes rêves les
       
 
         <div class="content">
-            <div class="education" id="education">
+            <section class="education" id="education">
                 <h1> Formations </h1>
 
                 <div class="school">
-                    <i class="fa-solid fa-scroll"></i>
+                   <img src="images/png/hexagone.png">
                     <div class="content">
                         <h4>2024-en cours</h4>
                         
                         <h2>Mastère Architecture des Systèmes d’Information</h2>
                         <h5>
                             <a href="https://www.ecole-hexagone.com/fr/fr/cursus/architecture-des-si/" target="_blank">Ecole Hexagone Clermont-Ferrand</a>
-                            <div class="tooltip"><i class="fa-solid fa-circle-info"></i>
-                                <span class="tooltiptext"> Cliquer pour découvrir</span>
-                              </div>
-                            
                         </h5>
                         <p class="description">Cette formation m'a permis d'acquérir une expertise étendue en programmation, conception de systèmes informatiques et gestion de projets. J'ai appris à résoudre des problèmes complexes, à développer des solutions logicielles efficaces. Les nombreux projets de groupes m'ont appris à collaborer au sein d'équipes multidisciplinaires. Cette formation m'a conféré une compréhension approfondie des principes fondamentaux de l'informatique auxquels j'ai ajouté des apprentissages autodidactes.</p>
                         <p class="competences">
@@ -101,16 +98,12 @@ Ces études et cette passion m'ont permis de concrétiser l'un de mes rêves les
 
                 
                 <div class="school">
-                    <i class="fa-solid fa-scroll"></i>
+                  <img src="images/png/uca.png">
                     <div class="content">
                         <h4>2021-2024</h4>
                         <h2>BUT informatique</h2>
                         <h5>
                             <a href="https://iut.uca.fr/formations/but-informatique-clermont" target="_blank">IUT  Clermont ferrand</a>
-                            <div class="tooltip"><i class="fa-solid fa-circle-info"></i>
-                                <span class="tooltiptext"> Cliquer pour découvrir</span>
-                              </div>
-                            
                         </h5>
                         <p class="description">Cette formation m'a permis d'acquérir une expertise étendue en programmation, conception de systèmes informatiques et gestion de projets. J'ai appris à résoudre des problèmes complexes, à développer des solutions logicielles efficaces. Les nombreux projets de groupes m'ont appris à collaborer au sein d'équipes multidisciplinaires. Cette formation m'a conféré une compréhension approfondie des principes fondamentaux de l'informatique auxquels j'ai ajouté des apprentissages autodidactes.</p>
                         <p class="competences">
@@ -118,11 +111,26 @@ Ces études et cette passion m'ont permis de concrétiser l'un de mes rêves les
                         </p>
                     </div>
                 </div>
-            </div>
 
+                 
+                <div class="school">
+                  <img src="images/png/uqac.png">
+                    <div class="content">
+                        <h4>2021-2024</h4>
+                        <h2>BUT informatique</h2>
+                        <h5>
+                            <a href="https://iut.uca.fr/formations/but-informatique-clermont" target="_blank">IUT  Clermont ferrand</a>
+                        </h5>
+                        <p class="description">Cette formation m'a permis d'acquérir une expertise étendue en programmation, conception de systèmes informatiques et gestion de projets. J'ai appris à résoudre des problèmes complexes, à développer des solutions logicielles efficaces. Les nombreux projets de groupes m'ont appris à collaborer au sein d'équipes multidisciplinaires. Cette formation m'a conféré une compréhension approfondie des principes fondamentaux de l'informatique auxquels j'ai ajouté des apprentissages autodidactes.</p>
+                        <p class="competences">
+                            <u>Compétences :</u> Programmation orientée objet, programmation système, réseaux, web, mobile, base de données, conception (UML, patrons de conception), droit, économie, gestion de projet et management.
+                        </p>
+                    </div>
+                </div>
+            </section>
             
 
-            <div class="professionnal-experience" id="professionnal-experience">
+            <section class="professionnal-experience" id="professionnal-experience">
                 <h1> Expériences professionnelles </h1>
                 <div class="school">
                     <i class="fa-solid fa-school"></i>
@@ -164,131 +172,102 @@ Ces études et cette passion m'ont permis de concrétiser l'un de mes rêves les
                     </div>
                    
                 </div>
-            </div>
-            
-            
-
-            <div class="skills" id="skills">
-                <h1> Compétences </h1>
-
-                <div class="school">
-                    <i class="fa-solid fa-school"></i>
-                    <div class="content">
-                    <h4>2021-2024</h4>
-                    <h2>Bachelor in Computer Science</h2>
-                    <h5>IUT  Clermont ferrand</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil vitae mollitia perspiciatis cum ex quo sint alias veritatis, animi nulla tenetur, vero modi! Fugit corrupti necessitatibus placeat deserunt distinctio.</p>
-                    </div>
-                   
-                </div>
-                <div class="school">
-                    <i class="fa-solid fa-school"></i>
-                    <div class="content">
-                    <h4>2021-2024</h4>
-                    <h2>Bachelor in Computer Science</h2>
-                    <h5>IUT  Clermont ferrand</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil vitae mollitia perspiciatis cum ex quo sint alias veritatis, animi nulla tenetur, vero modi! Fugit corrupti necessitatibus placeat deserunt distinctio.</p>
-                    </div>
-                   
-                </div>
-                <div class="school">
-                    <i class="fa-solid fa-school"></i>
-                    <div class="content">
-                    <h4>2021-2024</h4>
-                    <h2>Bachelor in Computer Science</h2>
-                    <h5>IUT  Clermont ferrand</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil vitae mollitia perspiciatis cum ex quo sint alias veritatis, animi nulla tenetur, vero modi! Fugit corrupti necessitatibus placeat deserunt distinctio.</p>
-                    </div>
-                   
-                </div>
-                <div class="school">
-                    <i class="fa-solid fa-school"></i>
-                    <div class="content">
-                    <h4>2021-2024</h4>
-                    <h2>Bachelor in Computer Science</h2>
-                    <h5>IUT  Clermont ferrand</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil vitae mollitia perspiciatis cum ex quo sint alias veritatis, animi nulla tenetur, vero modi! Fugit corrupti necessitatibus placeat deserunt distinctio.</p>
-                    </div>
-                   
-                </div>
-            </div>
-            
-            
+            </section>
         </div>
+        
     </div>
 
-    <div class="layout" style="display: flex; flex-direction: column;">
-        <div class="school">
-            <div class="content">
-            <h4>2021-2024</h4>
-            <h2>Bachelor in Computer Science</h2>
-            <h5>IUT  Clermont ferrand</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil vitae mollitia perspiciatis cum ex quo sint alias veritatis, animi nulla tenetur, vero modi! Fugit corrupti necessitatibus placeat deserunt distinctio.</p>
-            </div>
-           
-        </div>
-        <div class="school">
-            <i class="fa-solid fa-school"></i>
-            <div class="content">
-            <h4>2021-2024</h4>
-            <h2>Bachelor in Computer Science</h2>
-            <h5>IUT  Clermont ferrand</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil vitae mollitia perspiciatis cum ex quo sint alias veritatis, animi nulla tenetur, vero modi! Fugit corrupti necessitatibus placeat deserunt distinctio.</p>
-            </div>
-           
-        </div>
-        <div class="school">
-            <i class="fa-solid fa-school"></i>
-            <div class="content">
-            <h4>2021-2024</h4>
-            <h2>Bachelor in Computer Science</h2>
-            <h5>IUT  Clermont ferrand</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil vitae mollitia perspiciatis cum ex quo sint alias veritatis, animi nulla tenetur, vero modi! Fugit corrupti necessitatibus placeat deserunt distinctio.</p>
-            </div>
-           
-        </div>
-        <div class="school">
-            <i class="fa-solid fa-school"></i>
-            <div class="content">
-            <h4>2021-2024</h4>
-            <h2>Bachelor in Computer Science</h2>
-            <h5>IUT  Clermont ferrand</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil vitae mollitia perspiciatis cum ex quo sint alias veritatis, animi nulla tenetur, vero modi! Fugit corrupti necessitatibus placeat deserunt distinctio.</p>
-            </div>
-           
-        </div>
-        <div class="school">
-            <i class="fa-solid fa-school"></i>
-            <div class="content">
-            <h4>2021-2024</h4>
-            <h2>Bachelor in Computer Science</h2>
-            <h5>IUT  Clermont ferrand</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil vitae mollitia perspiciatis cum ex quo sint alias veritatis, animi nulla tenetur, vero modi! Fugit corrupti necessitatibus placeat deserunt distinctio.</p>
-            </div>
-           
-        </div>
-        <div class="school">
-            <i class="fa-solid fa-school"></i>
-            <div class="content">
-            <h4>2021-2024</h4>
-            <h2>Bachelor in Computer Science</h2>
-            <h5>IUT  Clermont ferrand</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil vitae mollitia perspiciatis cum ex quo sint alias veritatis, animi nulla tenetur, vero modi! Fugit corrupti necessitatibus placeat deserunt distinctio.</p>
-            </div>
-           
-        </div>
-        <div class="school">
-            <i class="fa-solid fa-school"></i>
-            <div class="content">
-            <h4>2021-2024</h4>
-            <h2>Bachelor in Computer Science</h2>
-            <h5>IUT  Clermont ferrand</h5>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam nihil vitae mollitia perspiciatis cum ex quo sint alias veritatis, animi nulla tenetur, vero modi! Fugit corrupti necessitatibus placeat deserunt distinctio.</p>
-            </div>
-           
-        </div>
+    <section class="skills" id="skills">
+      <h2>Mes Compétences</h2>
+      <div class="competence-grid">
+          <div class="competence-item">
+              <h3>Développement Web</h3>
+              <div class="technology-grid">
+                  <div class="technology-item">HTML</div>
+                  <div class="technology-item">CSS</div>
+                  <div class="technology-item">JavaScript</div>
+                  <div class="technology-item">React</div>
+                  <div class="technology-item">Vue.js</div>
+              </div>
+          </div>
+          <div class="competence-item">
+              <h3>Programmation</h3>
+              <div class="technology-grid">
+                  <div class="technology-item">Python</div>
+                  <div class="technology-item">Java</div>
+                  <div class="technology-item">C++</div>
+                  <div class="technology-item">C#</div>
+              </div>
+          </div>
+          <div class="competence-item">
+              <h3>Base de Données</h3>
+              <div class="technology-grid">
+                  <div class="technology-item">MySQL</div>
+                  <div class="technology-item">PostgreSQL</div>
+                  <div class="technology-item">MongoDB</div>
+              </div>
+          </div>
+          <div class="competence-item">
+              <h3>Outils DevOps</h3>
+              <div class="technology-grid">
+                  <div class="technology-item">Docker</div>
+                  <div class="technology-item">Kubernetes</div>
+                  <div class="technology-item">Jenkins</div>
+              </div>
+          </div>
+      </div>
+    </section>
 
-    </div>
+    <section class="project">
+      <h1> Mes projets </h1>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--one">
+             
+              <div>
+                <span>domestic</span>
+                <h2>Enjoy the exotic of sunny Hawaii</h2>
+                <p>
+                  Maui, Hawaii
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--two">
+              <span>subtropical</span>
+              <div>
+                <h2>The Island of Eternal Spring</h2>
+                <p>
+                  Lanzarote, Spanien
+                </p>
+              </div>
+            </div>
+      
+            <div class="swiper-slide swiper-slide--three">
+              <span>history</span>
+              <div>
+                <h2>Awesome Eiffel Tower</h2>
+                <p>
+                  Paris, France
+                </p>
+              </div>
+            </div>
+      
+            <div class="swiper-slide swiper-slide--four">
+              <span>Mayans</span>
+              <div>
+                <h2>One of the safest states in Mexico</h2>
+                <p>
+                  The Yucatan, Mexico
+                </p>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
 
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+      <script  src="./script.js"></script>
 </body>
 </html>

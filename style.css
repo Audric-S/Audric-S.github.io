@@ -18,6 +18,8 @@ body, html {
     transition: background-color 200ms linear;
 }
 
+
+
 .logo img {
     width: 70px;
     margin-top: 10px;
@@ -209,6 +211,12 @@ body, html {
 .sidebar-container{
     width: 30%;
     padding-top: 10%;
+    display: flex;
+}
+
+.sidebar-container-bottom{
+  align-items: flex-end;
+  padding-bottom: 5%;
 }
 
 .sidebar {
@@ -220,16 +228,18 @@ body, html {
     width: 100%;
 }
 
-.sidebar.fixed {
+.fixed {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 30%;
     position: fixed;
-    padding-top: 10%;
     top: 0;
+    padding-top: 10%;
 }
+
+
 
 .content {
     flex: 1;
@@ -257,13 +267,6 @@ body, html {
     color: #ff2b17;
 }
 
-.fa-scroll {
-    font-size: 2em;
-    color: #ff2b17;
-    margin-right: 4%;
-    margin-top: 1%;
-    align-self: flex-start;
-}
 
 .school{
     max-width: 70%;
@@ -301,6 +304,12 @@ body, html {
     text-align: justify;
 }
 
+.school img{
+  width: 8%;
+  margin-right: 4%;
+  margin-top: 1%;
+}
+
 .competences{
     color: #999999;
     font-size: 14px;
@@ -321,44 +330,244 @@ h5 a:hover{
     color: #ff2b17;
 }
 
-.tooltip {
+
+  
+  .project {
     position: relative;
-    display: inline-block;
-    margin-left: 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  margin-top: 8%;
+
   }
   
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 175px;
-    background-color: #888;
+  .swiper {
+    width: 80%;
+  }
+  
+  .swiper-slide {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    filter: blur(1px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: self-start;
+  }
+  
+  .swiper-slide-active {
+    filter: blur(0px);
+  }
+  
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    background: red;
+  }
+  
+  .swiper-slide span {
+    text-transform: uppercase;
     color: #fff;
+    background: #1b7402;
+    padding: 7px 18px 7px 25px;
+    display: inline-block;
+    border-radius: 0 20px 20px 0px;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .swiper-slide--one span {
+    background: #62667f;
+  }
+  
+  .swiper-slide--two span {
+    background: #087ac4;
+  }
+  
+  .swiper-slide--three span {
+    background: #b45205;
+  }
+  
+  .swiper-slide--four span {
+    background: #087ac4;
+  }
+  
+  .swiper-slide h2 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    padding: 25px 45px 0 25px;
+  }
+  
+  .swiper-slide p {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    padding: 0 25px 35px 25px;
+  }
+  
+  .swiper-slide svg {
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    margin-right: 7px;
+  }
+  
+  .swiper-slide--one {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(images/png/dafl.png)
+        no-repeat 50% 50% / cover;
+  }
+  
+  .swiper-slide--two {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(images/png/polar.png)
+      no-repeat 30% 30% / cover;
+  }
+  
+  .swiper-slide--three {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(images/png/answerz.png)
+        no-repeat 50% 50% / cover;
+  }
+  
+  .swiper-slide--four {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(images/png/platane.png)
+        no-repeat 50% 50% / cover;
+  }
+  
+  .swiper-slide--five {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+      url("https://images.unsplash.com/photo-1596521864207-13d46b1a0c78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80")
+        no-repeat 50% 50% / cover;
+  }
+  
+  .swiper-3d .swiper-slide-shadow-left,
+  .swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+  }
+
+
+
+
+.skills{
+  margin-top: 8%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.competence-grid{
+  width: 80%;
+}
+
+.competence-section {
+    padding: 50px 5%;
+    background-color: #f9f9f9;
     text-align: center;
-    border-radius: 6px;
-    padding: 0 0;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 100%;
-    margin-top: -10px;
-    margin-left: 10px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    font-size: 12px;
-    font-weight: 600;
-  }
-  
-  .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent #555 transparent transparent;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
+}
+
+.competence-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.competence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.competence-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.competence-item h3 {
+    font-size: 24px;
+    color: #ff2b17;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.competence-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+.competence-section {
+  padding: 50px 5%;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.competence-section h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.competence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.competence-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+
+.competence-item h3 {
+  font-size: 24px;
+  color: #ff2b17;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+}
+
+.technology-item {
+  background-color: #ffecec;
+  padding: 10px;
+  border-radius: 5px;
+  color: #333;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.competence-item p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
