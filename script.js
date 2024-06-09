@@ -81,3 +81,53 @@ var swiper = new Swiper(".swiper", {
 });
 
 
+
+(function(){
+    emailjs.init("dMyJQpveAD2JagX0W");
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+        
+        emailjs.send("service_lpjhhhq", "template_wd0v24h", {
+            from_name: name,
+            reply_to: email,
+            message_html: message
+        }).then(function(response) {
+            console.log('E-mail envoyé avec succès!', response);
+            resetForm(); 
+            openModal('Votre message a été envoyé avec succès!');
+        }, function(error) {
+            console.log('Erreur lors de l\'envoi de l\'e-mail:', error);
+            openModal('Une erreur s\'est produite lors de l\'envoi du message.');
+        });
+    });
+})();
+
+
+function resetForm() {
+    document.getElementById('contact-form').reset();
+}
+
+var modal = document.getElementById('modal');
+var closeButton = document.getElementsByClassName('close')[0];
+
+function closeModal() {
+    modal.style.display = 'none';
+}
+
+closeButton.addEventListener('click', closeModal);
+
+window.addEventListener('click', function(event) {
+    if (event.target == modal) {
+        closeModal();
+    }
+});
+
+function openModal(message) {
+    var modalMessage = document.getElementById('modal-message');
+    modalMessage.textContent = message;
+    modal.style.display = 'block';
+}
