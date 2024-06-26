@@ -1,0 +1,26 @@
+@media screen and (max-width: 480px) {
+    .sidebar-container {
+        display: none;
+    }
+
+    .About{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .text-part{
+        width: 100%;
+    }
+    .picture-part{
+        width: 100%;
+    }
+    .school{
+        width: 100%;
+    }
+    .content img{
+        display: none;
+    }
+    .content section{
+        width: 100%;
+    }
+}

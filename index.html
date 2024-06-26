@@ -7,6 +7,7 @@
     <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="phone.css">
     <script src="https://kit.fontawesome.com/7834701f1d.js" crossorigin="anonymous"></script>
 
     <link rel="icon" href="images/ico/logo.ico" type="image/x-icon">
@@ -24,6 +25,8 @@
             <a href="#" class="nav-item">Contact</a>
         </div>
     </nav>
+
+    
 
     <section class="intro">
         <div class="left-part">
@@ -179,43 +182,114 @@ Ces études et cette passion m'ont permis de concrétiser l'un de mes rêves les
         </div>
     </div>
 
-    <section class="skills" id="skills">
-      <h2>Mes Compétences</h2>
-      <div class="competence-grid">
-          <div class="competence-item">
-              <h3>Développement Web</h3>
-              <div class="technology-grid">
-                  <div class="technology-item">HTML</div>
-                  <div class="technology-item">CSS</div>
-                  <div class="technology-item">JavaScript</div>
-                  <div class="technology-item">Angular</div>
-                  <div class="technology-item">PHP</div>
+    <section class="skills">
+      <h1> Compétences techniques </h1>
+      <div id="scene">
+        <div id="left-zone">
+          <ul class="list">
+            <li class="item">
+              <input type="radio" id="radio_Web" name="basic_carousel" value="Web" checked="checked"/>
+                <label  for="radio_Web">
+                  <i class="fa-solid fa-globe fa-lg"></i>
+                  <p>Web</p>
+                </label>
+              <div class="skill-content content_strawberry"><span class="picto"></span>
+                <h1>Front-End</h1>
+                <div class="techno">
+                  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white">
+                  <img src="https://img.shields.io/badge/Vue%20js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D">
+                  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
+                </div>
+
+                
+                <h1>Back-End</h1>
+                <div class="techno">
+                  <img src="https://img.shields.io/badge/Symfony-000000?style=for-the-badge&logo=Symfony&logoColor=white">
+                  <img src="https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white">
+                  <img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
+                  <img src="https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white">
+                </div>
               </div>
-          </div>
-          <div class="competence-item">
-              <h3>Base de Données</h3>
-              <div class="technology-grid">
-                  <div class="technology-item">PostgreSQL</div>
-                  <div class="technology-item">MongoDB</div>
+            </li>
+            <li class="item">
+              <input type="radio" id="radio_Database" name="basic_carousel" value="Database"/>
+              <label  for="radio_Database">
+                <i class="fa-solid fa-database fa-lg"></i>
+                <p>Base de données</p>
+              </label>
+              <div class="skill-content content_strawberry"><span class="picto"></span>
+                <h1>SQL</h1>
+                <div class="techno">
+                  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white">
+                  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
+                  <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white">
+                </div>
+                <h1>NoSQL</h1>
+                <div class="techno">
+                  <img src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black">
+                  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white">
+                  <img src="https://img.shields.io/badge/redis-%23DD0031.svg?&style=for-the-badge&logo=redis&logoColor=white">
               </div>
-          </div>
-          <div class="competence-item">
-              <h3>Outils DevOps</h3>
-              <div class="technology-grid">
-                  <div class="technology-item">Docker</div>
-                  <div class="technology-item">Kubernetes</div>
-              </div>
-          </div>
-          <div class="competence-item">
-            <h3>Divers</h3>
-            <div class="technology-grid">
-              <div class="technology-item">C</div>
-                <div class="technology-item">Python</div>
-                <div class="technology-item">Java</div>
-                <div class="technology-item">C++</div>
-                <div class="technology-item">C#</div>
+            </li>
+            <li class="item">
+              <input type="radio" id="radio_IA" name="basic_carousel" value="IA"/>
+                <label for="radio_IA">
+                  <i class="fa-solid fa-brain fa-lg"></i>
+                  <p>Intelligence artificielle</p> 
+                </label>
+              <div class="skill-content content_strawberry"><span class="picto"></span>
+                <h1>Apprentissage/clustering</h1>
+                <div class="techno">
+                  <img src="https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white">
+                  <img src="https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white">
+                  <img src="https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white">
+                </div>
+              <h1>Application</h1>
+              <div class="techno">
+                <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white">
+                <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green">
             </div>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="radio_Mobile" name="basic_carousel" value="Mobile"/>
+                <label for="radio_Mobile">
+                  <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
+                  <p>Mobile</p> 
+                </label>
+              <div class="skill-content content_strawberry"><span class="picto"></span>
+                <h1>Application</h1>
+                <div class="techno">
+                  <img src="https://img.shields.io/badge/Kotlin-B125EA?style=for-the-badge&logo=kotlin&logoColor=white">
+                  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white">
+              </div>
+              </div>
+            </li>
+            <li class="item">
+              <input type="radio" id="radio_Miscellaneous" name="basic_carousel" value="Miscellaneous"/>
+                <label  for="radio_Miscellaneous">
+                  <i class="fa-solid fa-network-wired fa-lg"></i>
+                  <p>Divers</p> 
+                </label>
+              <div class="skill-content content_strawberry"><span class="picto"></span>
+                <h1>CI/CD</h1>
+                <div class="techno">
+                  <img src="https://img.shields.io/badge/Drone_CI-212121?style=for-the-badge&logo=drone&logoColor=white">
+                  <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white">
+                  <img src="https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white">
+                  <img src="https://img.shields.io/badge/Kubernetes-3069DE?style=for-the-badge&logo=kubernetes&logoColor=white">
+                </div>
+                <h1>Languages basiques</h1>
+                <div class="techno">
+                  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white">
+                  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white">
+                  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
+        <div id="middle-border"></div>
       </div>
     </section>
 
@@ -274,7 +348,7 @@ Ces études et cette passion m'ont permis de concrétiser l'un de mes rêves les
               </div>
           </div>
         </div>
-        <div class="swiper-pagination" style="margin-top: ;"></div>
+        <div class="swiper-pagination"></div>
 
       </section>
 
@@ -323,7 +397,7 @@ Ces études et cette passion m'ont permis de concrétiser l'un de mes rêves les
         </div>
       </footer>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
       <script  src="./script.js"></script>
 </body>
 

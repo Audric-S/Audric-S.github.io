@@ -131,3 +131,4 @@ function openModal(message) {
     modalMessage.textContent = message;
     modal.style.display = 'block';
 }
+
