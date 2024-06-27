@@ -248,7 +248,7 @@ body, html {
 .content h1{
 }
 .sidebar-item{
-    width: 20%;
+  width: 60%;
 }
 
 .sidebar-item a {
@@ -583,8 +583,8 @@ h5 a:hover{
 
 #scene #left-zone .list li.item input[type=radio]:checked ~ label {
   opacity: 1;
-  color: #d45549;
-  border-right: solid 4px #d45549;
+  color: #ff2b17;
+  border-right: solid 4px #ff2b17;
 }
 
 
@@ -651,5 +651,31 @@ h5 a:hover{
   100% {
     top: -400px;
     opacity: 0;
+  }
+}
+
+
+.important-experience {
+  max-width: 70%;
+  margin-top: 8%;
+  text-align: justify;
+}
+
+.important-experience h2{
+  color: #ff2b17;
+}
+
+.important-experience-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+  .important-experience-content {
+      flex-direction: column;
   }
 }
