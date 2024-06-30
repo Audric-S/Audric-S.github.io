@@ -3,6 +3,32 @@
         display: none;
     }
 
+
+    .picture-part{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    
+    .logo{
+        display: none;
+    }
+
+    .navbar{
+        max-width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .nav-item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    
+    .picture-part img {
+        width: 90%;
+    }
+
     .About{
         display: flex;
         flex-direction: column;
@@ -18,6 +44,30 @@
         width: 90%;
         max-width: 90%;
     }
+
+    .burger-menu {
+        display: block;
+      }
+    
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+    
+      .nav-links.show {
+        display: flex;
+      }
+    
+      .nav-item {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+      }
 
     .content img{
         display: none;

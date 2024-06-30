@@ -18,6 +18,13 @@ body, html {
     transition: background-color 200ms linear;
 }
 
+.burger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
 
 
 .logo img {
