@@ -245,8 +245,6 @@ body, html {
     flex: 1;
 }
 
-.content h1{
-}
 .sidebar-item{
   width: 60%;
 }
@@ -679,3 +677,4 @@ h5 a:hover{
       flex-direction: column;
   }
 }
+
